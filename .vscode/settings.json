@@ -62,7 +62,8 @@
     "lib/selenium-java-4.16.1/lib/opentelemetry-sdk-logs-1.28.0.jar",
     "lib/selenium-java-4.16.1/lib/opentelemetry-sdk-metrics-1.28.0.jar",
     "lib/selenium-java-4.16.1/lib/opentelemetry-sdk-trace-1.28.0.jar",
-    "lib/selenium-java-4.16.1/lib/opentelemetry-semconv-1.28.0-alpha.jar"
+    "lib/selenium-java-4.16.1/lib/opentelemetry-semconv-1.28.0-alpha.jar",
+    "lib/slf4j-simple-2.0.9.jar"
   ],
   "java.dependency.packagePresentation": "flat",
   "java.dependency.syncWithFolderExplorer": true
