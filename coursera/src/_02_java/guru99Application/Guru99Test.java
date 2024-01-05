@@ -1,4 +1,4 @@
-package guru99Application;
+package _02_java.guru99Application;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class guru99ApplicationTest {
+public class Guru99Test {
   ChromeDriver driver;
   WebDriverWait wait;
   String url = "http://demo.guru99.com/v4";

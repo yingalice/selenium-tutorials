@@ -1,4 +1,4 @@
-package task3;
+package _03_java_waits.implicitWait;
 
 import java.time.Duration;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class FlipkartProject {
+public class Flipkart {
 	ChromeDriver driver;
 	String url = "https://flipkart.com";
 	
@@ -21,6 +21,8 @@ public class FlipkartProject {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
     driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+		// Implicit wait - Time to wait for element to be in DOM
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));  
 		driver.get(url);
 		
     // Login pop-up doesn't appear until refresh
@@ -40,15 +42,7 @@ public class FlipkartProject {
 		Actions action = new Actions(driver);
 		WebElement electronicsLink = driver.findElement(By.xpath("//div[@aria-label='Electronics']"));
 		action.moveToElement(electronicsLink).build().perform();
-    // Flipkart not a good example for waits anymore, as mouseover menu appears immediately without delay
-
-		// Conditional waits: Explicit wait and fluent wait
-		
-		// Explicit wait - Time to wait for specific condition
-		// WaitUtils.waitTillElementVisible(driver, 10, By.linkText("Electronics GST Store"));  
-
-		// Fluent wait - Similar to explicit wait, and can define polling time and exceptions to ignore
-		WaitUtils.waitTillElementVisibleWithFluentWait(driver, 200, 10, By.linkText("Electronics GST Store")); 
+		// Flipkart not a good example for waits anymore, as mouseover menu appears immediately without delay
 		WebElement storeLink = driver.findElement(By.linkText("Electronics GST Store"));
 		action.moveToElement(storeLink).click().build().perform();
 	}

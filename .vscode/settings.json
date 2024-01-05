@@ -66,5 +66,8 @@
     "lib/slf4j-simple-2.0.9.jar"
   ],
   "java.dependency.packagePresentation": "flat",
-  "java.dependency.syncWithFolderExplorer": true
+  "java.dependency.syncWithFolderExplorer": true,
+  "java.project.sourcePaths": [
+    "coursera/src",
+  ]
 }

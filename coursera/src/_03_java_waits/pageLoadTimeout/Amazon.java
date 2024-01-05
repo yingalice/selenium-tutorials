@@ -1,4 +1,4 @@
-package task1;
+package _03_java_waits.pageLoadTimeout;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -9,9 +9,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class AmazonProject {
+public class Amazon {
   ChromeDriver driver;
-  String url = "https://amazons.com";
+  String url = "https://amazon.com";
 
   @BeforeClass
   public void invokeBrowser() {
@@ -25,6 +25,7 @@ public class AmazonProject {
 
   @Test
   public void verifyTitleOfHomePage() {
+    // Solve captcha manually
     try {
       TimeUnit.SECONDS.sleep(5);
     } catch (InterruptedException e) {

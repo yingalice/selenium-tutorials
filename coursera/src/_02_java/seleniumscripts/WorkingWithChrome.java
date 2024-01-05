@@ -1,4 +1,4 @@
-package seleniumScripts;
+package _02_java.seleniumScripts;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WorkingWithChrome {

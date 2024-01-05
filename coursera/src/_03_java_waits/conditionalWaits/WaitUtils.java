@@ -1,4 +1,4 @@
-package task3;
+package _03_java_waits.conditionalWaits;
 
 import java.time.Duration;
 
